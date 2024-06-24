@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exquisite</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Exquisite</h1>
+        <nav>
+            <ul>
+                <li><a href="#quotes">Quotes</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="quotes">
+        <h2>Motivational Quotes</h2>
+        <div class="quote-gallery">
+            <div class="quote-item">
+                <p>"The best way to predict the future is to create it."</p>
+            </div>
+            <div class="quote-item">
+                <p>"You are never too old to set another goal or to dream a new dream."</p>
+            </div>
+            <div class="quote-item">
+                <p>"Believe you can and you're halfway there."</p>
+            </div>
+            <!-- Add more quote items as needed -->
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Exquisite</h2>
+        <p>
+            Welcome to Exquisite, where we share beautiful and motivational quotes to inspire and uplift your day. Our mission is to spread positivity and encouragement through the power of words.
+        </p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">Your LinkedIn Profile</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Exquisite. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fffaf0;
+    color: #333;
+}
+
+header {
+    background-color: #ffd700;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 2em;
+    text-align: center;
+}
+
+#quotes .quote-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+.quote-item {
+    background-color: white;
+    border: 2px solid #ffd700;
+    border-radius: 10px;
+    padding: 1em;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.quote-item:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #ffd700;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
